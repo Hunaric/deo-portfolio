@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <main>
+    <main class="bg-gray-200">
         <header class="w-full h-16 text-white bg-gray-800">
             <nav class="flex flex-row justify-between items-center h-full lg:px-50 ">
                 <div class="w-1/2 flex justify-center items-center">
@@ -158,7 +158,7 @@
                 <div class="h-full flex flex-col justify-center items-center text-center px-6 gap-8">
                     
                   <div>
-                    <p class="font-bold text-4xl">FORMATIONS</p>
+                    <h2 class="font-bold text-4xl">FORMATIONS</h2>
                     <P class="italic text-gray-600">Présentation de mes dernières expérience</P>
                   </div>
                   <div class="flex flex-col gap-6">
@@ -197,11 +197,55 @@
         <section class="w-full text-white bg-gray-800">
             <div class="py-22">
                 <div class="flex flex-col justify-center items-center gap-8">
-                    <h2 class="text-4xl font-bold">Consultez mon Curriculum Vitae en ligne</h2>
+                    <h2 class="text-4xl font-bold w-2/3 lg:w-full text-center">Consultez mon Curriculum Vitae en ligne</h2>
                     <button class="bg-white rounded-full px-6 py-4 text-black font-bold text-xl">CLIQUEZ ICI</button>
                 </div>
             </div>
         </section>
+        <section class="w-full">
+            <div class="py-26">
+                <div class="flex flex-col items-center gap-8">
+                    <h2 class="font-bold text-4xl">Contact</h2>
+                    <hr class="w-12 ">
+                    <p>N'hesitez pas a me contacter</p>
+                    <div class="flex flex-col lg:flex-row justify-start lg:items-start gap-8 lg:gap-0 lg:w-3/5 w-full ">
+                        <div class="flex flex-col justify-center items-center gap-6 lg:w-2/4 lg:h-full">
+                            <div class="flex flex-col items-center gap-2 w-4/5">
+                                <div class="flex items-start w-full">
+                                    <span for="name">Nom et prenom</span>
+                                </div>
+                                <input type="text" name="name" id="" placeholder="Nom et prenoms" class="px-3 py-6 bg-white w-full ring-1 rounded-sm">
+                            </div>
+                            <div class="flex flex-col items-center gap-2 w-4/5">
+                                <div class="flex items-start w-full">
+                                    <span for="mail">Email</span>
+                                </div>
+                                <input type="text" name="mail" id="" placeholder="Email" class="px-3 py-6 bg-white w-full ring-1 rounded-sm">
+                            </div>
+
+                            <hr class="w-12 ">
+                        </div>
+                        <div class="flex flex-col justify-start items-center gap-6 lg:w-2/4">
+                            <div class="flex flex-col  items-start gap-2 w-4/5">
+                                <div class="flex items-start w-full">
+                                    <span for="message">Message</span>
+                                </div>
+                                <textarea name="message" id="" placeholder="Message" class="px-3 py-6 bg-white w-full h-50 ring-1 rounded-sm"></textarea>
+
+                            </div>
+                            <hr class="w-12">
+                            <button class="text-white bg-orange-400 rounded-full px-3 py-2 font-bold">ENVOYER</button>
+                        </div>
+                </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="w-full bg-gray-800 text-white">
+            <div class="py-12 flex justify-center">
+                <p>Copyright by Hunaric & Deo-Gracias | 2025</p>
+            </div>
+        </footer>
     </main>
   </body>
 </html>
